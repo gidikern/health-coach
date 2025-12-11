@@ -6,7 +6,7 @@ AI-powered personal health coaching platform
 
 ```bash
 # Clone with submodules
-git clone --recursive TBD
+git clone --recursive https://github.com/gidikern/health-coach.git
 
 # Or if already cloned
 git submodule update --init --recursive
