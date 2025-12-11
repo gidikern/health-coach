@@ -1,0 +1,3 @@
+[submodule "ai-sdlc"]
+	path = ai-sdlc
+	url = https://github.com/gidikern/ai-sdlc.git

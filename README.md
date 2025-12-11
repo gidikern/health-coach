@@ -1,0 +1,59 @@
+# health-coach
+
+AI-powered personal health coaching platform
+
+## Setup
+
+```bash
+# Clone with submodules
+git clone --recursive TBD
+
+# Or if already cloned
+git submodule update --init --recursive
+```
+
+## Development
+
+This project uses [ai-sdlc](./ai-sdlc/) framework for AI-assisted development.
+
+### Prerequisites
+
+- Claude Code CLI installed
+- Git
+
+### Getting Started
+
+```bash
+# Start Claude Code
+claude
+
+# Begin with product discovery
+> "Let's explore the product"
+```
+
+## Project Structure
+
+```
+├── ai-sdlc/              # AI-SDLC framework (submodule)
+├── docs/
+│   ├── product/          # Product documentation
+│   │   ├── discovery.md
+│   │   ├── prd.md
+│   │   └── user-stories/
+│   └── architecture/     # Technical documentation
+│       ├── architecture.md
+│       ├── tech-spec.md
+│       └── adr/
+├── src/                  # Source code
+└── tests/                # Tests
+```
+
+## Documentation
+
+- [Product Discovery](docs/product/discovery.md)
+- [Product Requirements](docs/product/prd.md)
+- [Architecture](docs/architecture/architecture.md)
+
+## License
+
+TBD
