@@ -8,7 +8,7 @@ AI-powered personal health coaching platform
 
 ## AI-SDLC Integration
 
-This project uses [ai-sdlc](./ai-sdlc/) as a git submodule for:
+This project lives under the ai-sdlc parent directory and inherits:
 - Agent skills (Product Manager, Architect, Developer, Reviewer)
 - Workflows (Discovery → Architecture → Implementation)
 - Development standards
@@ -69,9 +69,8 @@ See `docs/architecture/adr/` for Architecture Decision Records.
 
 ```
 health-coach/
-├── ai-sdlc/              ← Submodule (do not edit directly)
 ├── .claude/
-│   ├── settings.json     ← Skill configuration
+│   ├── settings.json     ← Skill configuration (references ../../skills/)
 │   ├── commands/         ← Project-specific commands
 │   └── skills/           ← Local skill overrides
 ├── docs/
@@ -82,21 +81,7 @@ health-coach/
 
 ## Commands
 
-Base commands from ai-sdlc:
-- (Available when working in ai-sdlc submodule)
-
 Project commands:
 - (Add project-specific commands in .claude/commands/)
 
-## Updating ai-sdlc
-
-To update to a newer version:
-
-```bash
-cd ai-sdlc
-git fetch --tags
-git checkout v1.x.x  # desired version
-cd ..
-git add ai-sdlc
-git commit -m "chore: update ai-sdlc to v1.x.x"
-```
+Base commands from ai-sdlc are available from the parent directory.
